@@ -1,1 +1,40 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ćwiczenia z js</title>
+</head>
+<body>
+ 	<button id="jeden" onclick="af()"> naciskaj </button>
+
+ 	<button id="dwa" onclick="ciastka()"> to tu</button>
+
+ 	<button id="trzy" onclick="muffin()"> aqui </button>
+ 	<p id="demo"> </p>
+
+ 	<script type="text/javascript">
+ 		
+ 		function aka (a,b) {
+ 			console.log(a+b); 
+ 		}
+ 		aka(2,5);
+
+ 		function af(){
+ 			alert("Ohhh joj");
+ 		}
+
+ 		function ciastka(){
+ 			confirm("na pewno chcesz tego?");
+ 		}
+
+ 		function muffin(){
+ 			var imie = prompt("jak masz na imie?","Harry Potter");
+
+ 			if (imie != null) {
+ 				document.getElementById('demo').
+ 				innerHTML=  "Hello " + imie + " what's up?";
+ 			}
+ 		}
+ 	</script>
+</body>
+</html>
